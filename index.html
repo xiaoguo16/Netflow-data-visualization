@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/main.css"/>
+    <link rel="stylesheet" href="style/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="javascripts/jquery-3.1.1.min.js"></script>
+    <script src="Highstock-6.0.2/Highstock-6.0.2/code/highstock.js"></script>
+    <script src="Highstock-6.0.2/Highstock-6.0.2/code/modules/exporting.js"></script>
+    <script type="text/javascript" src="Highstock-6.0.2/Highstock-6.0.2/code/themes/gray.js"></script>
+    <script src="javascripts/line.d3.v3.js"></script>
+    <script src='javascripts/circos.min.js'></script>
+    <script src="javascripts/d3-queue.js"></script>
+    <title>主页</title>
+</head>
+<body>
+    <div id="time">
+        <h5></h5>
+        <div id="timeline"></div>
+    </div>
+    <div id="paraPart">
+        <div class="list">
+            <p class="setterTitle">Parameters Setter</p>
+            <form>
+                <p class="timeTitle">Time:</p>
+                <input type="text" value="4/6 11:02" class="form-control" name="timeStart">
+                <span class="to">-</span>
+                <input type="text"  value="4/6 11:20" class="form-control" name="timeEnd">
+                <p id="timeSplice">Time Splice:</p>
+                <input type="text" value="15" class="form-control" name="timeSplice">
+                <span>s</span>
+                <p id="dimensions">Dimensions Selector:</p>
+
+                <select class="form-control" id="paraSelect">
+                    <option>All</option>
+                    <option>timeNum</option>
+                    <option>sIpEn</option>
+                    <option>dIpEn</option>
+                    <option>sPortEn</option>
+                    <option>dPortEn</option>
+                    <option>packSize</option>
+                    <option>byteAve</option>
+                    <option>flowCount</option>
+                </select>
+                <span>Seleted Dimensions:</span>
+                <div id="selected">
+
+                </div>
+                <input type="button" value="Clear" class="clear" name="clear">
+                <input type="button" value="Start parallel" class="btnStart" name="start">
+                <input type="button" value="Start meso" class="btnStart" name="start">
+            </form>
+        </div>
+        <div id="paraView"></div>
+    </div>
+    <div class="containerMM">
+
+            <!--<div class="list">-->
+                <!--<p class="setterTitle">Meso Prameters Setter</p>-->
+                <!--<form>-->
+                    <!--<p class="timeTitle">Time:</p>-->
+                    <!--<input type="range" class="rangeInput" value="0">-->
+                    <!--<p class="timeTitle">IpNum:</p>-->
+                    <!--<input type="range"  class="rangeInput" value="0">-->
+                    <!--<p class="timeTitle">PortNum:</p>-->
+                    <!--<input type="range"  class="rangeInput" value="0">-->
+                    <!--<p class="timeTitle">List:</p>-->
+                    <!--<ol>-->
+                        <!--<li>10.9.81.5</li>-->
+                        <!--<li>172.30.0.3</li>-->
+                        <!--<li>172.30.0.2</li>-->
+                    <!--</ol>-->
+                    <!--<ol>-->
+                        <!--<li>80</li>-->
+                        <!--<li>51357</li>-->
+                        <!--<li>51358</li>-->
+                    <!--</ol>-->
+                    <!--<input type="button" value="Start analyze" class="btnStart" name="start">-->
+                <!--</form>-->
+            <!--</div>-->
+
+        <div id="heatMap">
+            <div id="portTitle">
+                <p>Port View</p>
+                <a id="sPortBtn">SrcPort</a>
+                <a id="dPortBtn">DstPort</a>
+                <a id="allPortBtn" style="color:#161ef7">AllPort</a>
+            </div>
+            <div class="heatView">
+                <div id="matrixPort"></div>
+                <div id="ratio"></div>
+            </div>
+        </div>
+        <div id="ipSun">
+            <div id="ipTitle">
+                <p>Ip View</p>
+                <a id="srcBtn">SrcIp</a>
+                <a id="dstBtn">DstIp</a>
+                <a id="allBtn" style="color:#161ef7">AllIp</a>
+            </div>
+            <div id="ipView"></div>
+        </div>
+        <div id="micro">
+            <div class="microPara">
+                <div class="line1">
+                   <span>Target:</span>
+                   <input type="text"  value="10.9.81.5,51357" class="form-control" name="target1">
+                   <!--<span>Target 2:</span>-->
+                   <!--<input type="text"  value="137" class="form-control" name="target2">-->
+                </div>
+                <div class="line2">
+                    <span class="date">Date:</span>
+                    <input type="text"  value="4/06" class="form-control" name="date">
+                    <input type="button" value="Start analyze" class="microStart" name="start">
+                </div>
+            </div>
+            <div id="microView">
+
+            </div>
+        </div>
+    </div>
+<script src="javascripts/timeline.js"></script>
+</body>
+</html>

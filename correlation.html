@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="style/corrLayout.css" rel="stylesheet"/>
+    <link href="style/correlation.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="javascripts/jquery-3.1.1.min.js"></script>
+    <script src="javascripts/d3.min.js"></script>
+    <script src="Highstock-6.0.2/Highstock-6.0.2/code/highstock.js"></script>
+    <script src="Highstock-6.0.2/Highstock-6.0.2/code/modules/exporting.js"></script>
+    <script type="text/javascript" src="Highstock-6.0.2/Highstock-6.0.2/code/themes/gray.js"></script>
+    <title>Title</title>
+</head>
+<body>
+<div id="titleHead" style="width: 100%;height:50px;background-color:#000;">
+    <h2 style="color:white;margin:0;padding-left:30px;padding-top:9px;">关联分析</h2>
+</div>
+<div class="top">
+    <div class="list">
+        <p class="setterTitle">Correlation Analysis Setter</p>
+        <form>
+            <p class="timeTitle">Time:</p>
+            <input type="text" value="4/6 11:09" class="form-control" name="timeStart">
+            <span class="to">-</span>
+            <input type="text"  value="4/6 11:20" class="form-control" name="timeEnd">
+            <p class="initialTitle">Initial Node:</p>
+            <input type="text" value="10.9.81.5" class="form-control" name="node"><input type="button" value="Delete" class="delete" name="delete">
+            <p class="focusTitle">Focus Nodes:</p>
+            <input type="button" value="Append" class="append" name="append">
+            <p class="filter">IP Counts Filter:</p>
+            <span>></span><input type="text" value="50" class="form-control" name="filter"><span>times</span>
+            <!--<input type="button" value="Start analyze" class="btnStart" name="start">-->
+            <input type="button" value="Start analyze(Indirect)" class="btnStart" name="start">
+            <input type="button" value="Start analyze(Direct)" class="btnStart2" name="start2">
+        </form>
+    </div>
+    <div class="view">
+        <div class="forceCircleTitle"></div>
+        <div class="forceLayout"></div>
+    </div>
+    <div class="view2">
+        <div class="forceTitle2">
+            <!--<h3>Direct Relation View</h3>-->
+        </div>
+        <div class="forceLayout2"></div>
+    </div>
+
+</div>
+<div class="bottom">
+    <div class="list">
+        <p class="setterTitle">Netflow Analysis Setter</p>
+        <form>
+            <p class="timeTitle">Time:</p>
+            <input type="text" value="4/6 11:02" class="form-control" name="timeStart">
+            <span class="to">-</span>
+            <input type="text"  value="4/6 11:20" class="form-control" name="timeEnd">
+            <p>Analysis Object:</p>
+            <input type="text"  value="172.30.0.2" class="form-control" name="object"><input type="button" value="Delete" class="delete" name="delete">
+            <input type="button" value="Append" class="append" name="append">
+            <input type="button" value="Start analyze" class="btnStart" name="start">
+
+
+        </form>
+    </div>
+    <div id="correTimeline"></div>
+</div>
+<script src="javascripts/correJS.js"></script>
+<script src="javascripts/correTimeline.js"></script>
+</body>
+</html>

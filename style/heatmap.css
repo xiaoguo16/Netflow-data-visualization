@@ -1,0 +1,44 @@
+
+
+/*.axis line,*/
+/*.axis path {*/
+    /*fill: none;*/
+    /*stroke: #000;*/
+    /*shape-rendering: crispEdges;*/
+/*}*/
+
+/*.axis text {*/
+    /*text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;*/
+    /*cursor: move;*/
+/*}*/
+
+.tooltip{
+    position:absolute;
+    padding:5px;
+    width:120;
+    height:auto;
+    line-height: 1.5em;
+    font-family:simsun;
+    font-size:10px;
+    color:black;
+    background-color: rgb(255,255,255);
+    border: 1px solid #7c7c7c;
+    border-radius:5px;
+}
+.q0-6 { fill:rgb(4,35,130); }
+.q1-6 { fill:rgb(64,213,30); }
+.q2-6 { fill:rgb(255,143,143); }
+.q3-6 { fill:rgb(224,54,224); }
+.q4-6 { fill:rgb(233,8,8); }
+.q5-6 { fill:rgb(255,255,255);}
+
+
+.lineClass{
+    stroke: rgb(255,255,255);
+    stroke-width: 2px;
+}
+
+.ratioLine{
+    stroke:#ccc;
+    stroke-width: 2px;
+}

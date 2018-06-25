@@ -1,0 +1,161 @@
+div#time{
+    margin:30px 30px;
+}
+div#timeline{
+    height:250px;
+}
+div#paraPart{
+    overflow: hidden;/*清除浮动*/
+    margin:30px 30px;
+}
+div.list{
+    width:300px;
+    float:left;
+    border:1px solid #d6d6d6;
+}
+#paraPart #paraView{
+    float:left;
+    width:calc(100% - 300px);
+    height:330px;
+}
+p.setterTitle{
+    background-color: #bfbfbf;
+    color:white;
+    font-size: 1.2em;
+    padding:7px 10px;
+}
+p.timeTitle{
+    margin-bottom:4px;
+}
+#paraPart .list form{
+    margin:10px 10px;
+}
+#paraPart .list form input[name="timeStart"]{
+    width:40%;
+    height:23px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#paraPart .list form input[name="timeEnd"]{
+    width:40%;
+    height:23px;
+    display: inline-block;
+    margin-left:10px;
+}
+p#timeSplice{
+    margin-top:10px;
+    display:inline-block;
+}
+#paraPart .list form input[name="timeSplice"]{
+    width:30%;
+    display: inline-block;
+    height:23px;
+}
+p#dimensions{
+    display: inline-block;
+}
+#paraPart .list form select{
+    height: 30px;
+    width:50%;
+    display: inline-block;
+}
+div#selected{
+    word-wrap: break-word;
+    word-break: normal;
+}
+div#selected span{
+    padding-right:20px;
+    text-decoration: underline;
+}
+#paraPart .list form input[type="button"]{
+    display: block;
+    margin-bottom:7px;
+    margin-top:7px;
+}
+div.containerMM{
+    display:flex;
+    margin:30px 30px;
+}
+div#heatMap{
+    flex:40%;
+}
+div#ipSun{
+    flex:30%;
+}
+div#micro{
+    flex:30%;
+}
+div.heatView{
+    display:flex;
+}
+div#matrixPort{
+    flex:75%;
+}
+div#ratio{
+    flex:25%;
+}
+div#ipTitle{
+    /*float:left;*/
+    /*margin-top:10px;*/
+    /*margin-right:10px;*/
+    padding-top:10px;
+    text-align: center;
+}
+div#ipTitle p{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+div#ipTitle a{
+    text-decoration: underline;
+    cursor: pointer;
+    /*display: block;*/
+    display:inline-block;
+    margin-bottom:10px;
+    margin-right:30px;
+    margin-left:30px;
+}
+
+div#ipView{
+    /*height:350px;*/
+    /*float:left;*/
+    /*width:300px;*/
+    margin:25px 25px;
+}
+div#portTitle p{
+    font-size: 1.5em;
+    font-weight: 600;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom:0;
+}
+div#portTitle a{
+    text-decoration: underline;
+    cursor: pointer;
+    display: inline-block;
+    margin-right:10px;
+}
+div#meso ol{
+    display:inline-block;
+    margin-right:30px;
+}
+div#micro input[name="target1"]{
+    display:inline-block;
+    width:300px;
+    height:28px;
+    margin-right:30px;
+}
+div#micro input[name="date"]{
+    display:inline-block;
+    width:120px;
+    height:28px;
+    margin-right:30px;
+}
+div.line2{
+    margin-top:20px;
+}
+
+div#microView{
+    /*width:440px;*/
+    margin:25px 25px;
+}

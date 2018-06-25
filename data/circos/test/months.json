@@ -1,0 +1,6 @@
+[
+  { "len": 2, "color": "#8dd3c7", "label": "one", "id": "one" },
+  { "len": 2, "color": "#ffffb3", "label": "two", "id": "two" },
+  { "len": 2, "color": "#bebada", "label": "three", "id": "three" },
+  { "len": 2, "color": "#ffed6f", "label": "four", "id": "four" }
+]

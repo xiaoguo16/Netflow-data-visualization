@@ -1,0 +1,24 @@
+.foreBackground path {
+    fill: none;
+    stroke: #c94c48;
+    opacity:.5;
+}
+.background path {
+    fill: none;
+    stroke: #ddd;
+    shape-rendering: crispEdges;
+}
+
+.axis line,
+.axis path {
+    fill: #ccc;
+
+    width:1px;
+
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+    cursor: move;
+}
